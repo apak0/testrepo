@@ -2,7 +2,6 @@ import "./App.css";
 
 import React from "react";
 import addNotification from "react-push-notification";
-import logo from "./images/logo.jpg";
 
 function App() {
   const clickToNotify = () => {
@@ -10,9 +9,10 @@ function App() {
       title: "code with mami",
       message: "this is message",
       duration: 4000,
-      icon: logo,
+
       native: true,
-      onClick: () => window.location = "https://www.youtube.com/watch?v=SiWlUmkPmkU"
+      onClick: () =>
+        (window.location = "https://www.youtube.com/watch?v=SiWlUmkPmkU"),
     });
   };
 
