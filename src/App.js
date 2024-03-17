@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="">
-        <h1>Name</h1>
+        <h1>First Name</h1>
         <input type="text" placeholder="name" />
         <button onClick={clickToNotify}>Send</button>
       </div>
