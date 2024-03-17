@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import React from "react";
+import addNotification from "react-push-notification";
+import logo from "./images/logo.jpg";
 
 function App() {
+  const clickToNotify = () => {
+    addNotification({
+      title: "code with mami",
+      message: "this is message",
+      duration: 4000,
+      icon: logo,
+      native: true,
+      onClick: () => window.location = "https://www.youtube.com/watch?v=SiWlUmkPmkU"
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="">
+        <h1>Name</h1>
+        <input type="text" placeholder="name" />
+        <button onClick={clickToNotify}>Send</button>
+      </div>
     </div>
   );
 }
