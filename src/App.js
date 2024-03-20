@@ -10,7 +10,7 @@ function App() {
       message: "this is message",
       duration: 4000,
 
-      native: true,
+      native: false,
       onClick: () =>
         (window.location = "https://www.youtube.com/watch?v=SiWlUmkPmkU"),
     });
