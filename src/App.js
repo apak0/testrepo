@@ -10,9 +10,9 @@ function App() {
       message: "this is message",
       duration: 4000,
 
-      native: false,
+      native: true,
       onClick: () =>
-        (window.location = "https://www.youtube.com/watch?v=SiWlUmkPmkU"),
+        console.log("asd")
     });
   };
 
